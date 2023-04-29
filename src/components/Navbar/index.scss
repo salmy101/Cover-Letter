@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 0.5px black solid;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 2px;
+}
