@@ -1,8 +1,22 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./index.scss";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 function Navbar() {
+
+  const [clicked, setClicked] = useState(false)
+
+  const click = () => {
+    setClicked(current => !current) //changes to whatever it isnt at the time
+  }
+
+  useEffect( () => {
+    console.log(clicked);
+}, [clicked]);
+
+
   return (
     <nav className="nav">
       <div className="logo">
@@ -12,9 +26,9 @@ function Navbar() {
       </div>
 
       <div className="nav-links">
-        <ul className="nav-list">
+        <ul className={clicked ? "#navbar active" : "navbar"}>
           <li className="nav-item">
-            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            <Link classname="active" to="/" style={{ textDecoration: "none", color: "black" }}>
               ABOUT
             </Link>
           </li>
@@ -44,6 +58,17 @@ function Navbar() {
           </li>
         </ul>
       </div>
+
+      <div id="mobile">
+          <i id="bar"
+          onClick={click} 
+          className={clicked ? "fas fa-times" : 
+          "fas fa-bars"}
+          ></i>
+        </div>
+
+
+
     </nav>
   );
 }

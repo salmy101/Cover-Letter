@@ -13,15 +13,68 @@
   font-weight: bold;
 }
 
-.nav-links{ //parent component
+.navbar{ //parent component
   display: flex; 
+  list-style: none;
 }
 
 .nav-list{
   display: flex;
-  list-style: none;
 }
 
 .nav-item{
   margin-left: 1rem;
+}
+
+
+
+
+
+//responsive design 
+#mobile{
+  display: none;
+}
+#mobile i{
+  color: #ffff;
+  align-items: center;
+} 
+
+@media screen and (max-width: 769px){ //small screen
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 3;
+    top: 40px;
+    right: -400px; //hides the nav bar unless clicked on the hamburger menue
+    width: 300px;
+    height: 100vh;
+    // background: #624F82;
+    // background: #363637;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.5s ease-in-out;
+  } 
+
+  .navbar.active{ //will show the navbar when clicked
+    right: 0px;
+  }
+
+  .navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile{
+    display: block;
+  }
+
+  #mobile i{
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+
+  }
+
 }
