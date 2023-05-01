@@ -5,41 +5,39 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="nav">
-      <ul>
-        <li>
-          <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-            SALMA
-          </Link>
-        </li>
-      </ul>
+      <div className="logo">
+        <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+          SALMA
+        </Link>
+      </div>
 
       <div className="nav-links">
-        <ul>
-          <li>
+        <ul className="nav-list">
+          <li className="nav-item">
             <Link to="/" style={{ textDecoration: "none", color: "black" }}>
               ABOUT
             </Link>
           </li>
 
-          <li>
+          <li className="nav-item">
             <Link to="/" style={{ textDecoration: "none", color: "black" }}>
               PROJECTS
             </Link>
           </li>
 
-          <li>
+          <li className="nav-item">
             <Link to="/" style={{ textDecoration: "none", color: "black" }}>
               WHY YOU
             </Link>
           </li>
 
-          <li>
+          <li className="nav-item">
             <Link to="/" style={{ textDecoration: "none", color: "black" }}>
               WHY ME
             </Link>
           </li>
 
-          <li>
+          <li className="nav-item">
             <Link to="/" style={{ textDecoration: "none", color: "black" }}>
               CONTACT
             </Link>
