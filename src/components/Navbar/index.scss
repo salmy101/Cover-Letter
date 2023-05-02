@@ -1,11 +1,20 @@
 
 
 .nav{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center; //puts logo and links in same plane
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // differentiate the nav fro white background
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  z-index: 999;
+  // opacity: 1;
+
+
 }
 
 .logo{
@@ -30,51 +39,51 @@
 
 
 
-//responsive design 
-#mobile{
-  display: none;
-}
-#mobile i{
-  color: #ffff;
-  align-items: center;
-} 
+// //responsive design 
+// #mobile{
+//   display: none;
+// }
+// #mobile i{
+//   color: rgb(0, 0, 0);
+//   align-items: center;
+// } 
 
-@media screen and (max-width: 769px){ //small screen
-  .navbar{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: fixed;
-    z-index: 3;
-    top: 40px;
-    right: -400px; //hides the nav bar unless clicked on the hamburger menue
-    width: 300px;
-    height: 100vh;
-    // background: #624F82;
-    // background: #363637;
-    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-    padding: 40px 0 0 10px;
-    transition: 0.5s ease-in-out;
-  } 
+// @media screen and (max-width: 769px){ //small screen
+//   .navbar{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     justify-content: flex-start;
+//     position: fixed;
+//     z-index: 3;
+//     top: 40px;
+//     right: -400px; //hides the nav bar unless clicked on the hamburger menue
+//     width: 300px;
+//     height: 100vh;
+//     // background: #624F82;
+//     // background: #363637;
+//     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+//     padding: 40px 0 0 10px;
+//     transition: 0.5s ease-in-out;
+//   } 
 
-  .navbar.active{ //will show the navbar when clicked
-    right: 0px;
-  }
+//   .navbar.active{ //will show the navbar when clicked
+//     right: 0px;
+//   }
 
-  .navbar li {
-    margin-bottom: 25px;
-  }
+//   .navbar li {
+//     margin-bottom: 25px;
+//   }
 
-  #mobile{
-    display: block;
-  }
+//   #mobile{
+//     display: block;
+//   }
 
-  #mobile i{
-    font-size: 24px;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
+//   #mobile i{
+//     font-size: 24px;
+//     cursor: pointer;
+//     color: rgb(0, 0, 0);
 
-  }
+//   }
 
-}
+// }

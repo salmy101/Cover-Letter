@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./index.scss";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { HashLink as Link } from "react-router-hash-link";
+import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 function Navbar() {
@@ -26,21 +26,21 @@ function Navbar() {
       </div>
 
       <div className="nav-links">
-        <ul className={clicked ? "#navbar active" : "navbar"}>
+      <ul className={clicked ? "navbar active" : "navbar"}>
           <li className="nav-item">
-            <Link classname="active" to="/" style={{ textDecoration: "none", color: "black" }}>
+            <Link classname="active" to="#about" smooth style={{ textDecoration: "none", color: "black" }}>
               ABOUT
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            <Link to="#projects" smooth style={{ textDecoration: "none", color: "black" }}>
               PROJECTS
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            <Link to="#company" smooth style={{ textDecoration: "none", color: "black" }}>
               WHY YOU
             </Link>
           </li>
@@ -59,13 +59,12 @@ function Navbar() {
         </ul>
       </div>
 
-      <div id="mobile">
+      {/* <div id="mobile">
           <i id="bar"
           onClick={click} 
-          className={clicked ? "fas fa-times" : 
-          "fas fa-bars"}
+          className={clicked ? faTimes : faBars}
           ></i>
-        </div>
+        </div> */}
 
 
 
