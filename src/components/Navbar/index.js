@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <nav className="nav">
       <div className="logo">
-        <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+        <Link to="/#about" style={{ textDecoration: "none", color: "black" }}>
           SALMA
         </Link>
       </div>
