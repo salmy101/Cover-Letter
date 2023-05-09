@@ -5,17 +5,17 @@ header {
 	justify-content: space-between;
 	height: 80px;
 	padding: 0 2rem;
-	background-color: pink;
+	background-color: #394867;
+	color: #ffff;
 }
 
 nav a {
 	margin: 0 1rem;
-	color: var(--textColor);
 	text-decoration: none;
 }
 
 nav a:hover {
-	color: var(--secondaryColor);
+	color: #9BA4B5;
 }
 
 header .nav-btn {
@@ -53,7 +53,7 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: pink;
+		background-color: #394867;
 		transition: 1s;
 	}
 
