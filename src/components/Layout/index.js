@@ -16,8 +16,8 @@ function Layout() {
       <Navbar />
       <div className="page"> 
       <Hero />
-      {/* <About />
-      <Projects />
+      <About />
+      {/* <Projects />
       <Company /> */}
       {/* <Outlet /> */}
 

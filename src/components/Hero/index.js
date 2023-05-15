@@ -15,20 +15,16 @@ function Hero() {
           <p>Welcome to my cover letter for COMPANY. IN this cover letter I hope that you can get an
             understanding of who i am, my experiences, and why id love to work with you. If ive peaked your interetd plz continue
           </p>
-
           <button>
           <Link to="/#about" smooth style={{ textDecoration: "none", color: "black" }}>
             Get to Know Me
           </Link>
           </button>
         </div>
-        <div className="text-zone">
+        
             <div className="image-zone">
               <img src={Turkey} alt="Turkey" />
             </div>
-
-        </div>
-
 
       </div>
     </>
