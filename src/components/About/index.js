@@ -5,7 +5,10 @@ function About() {
   return (
     <>
       <div className="container about-page" id="about">
-        <div className="text-zone">
+        <div className="text-zone-about">
+        <h1>ABOUT!</h1>
+              </div>
+              <div className="text-zone-about">
         <h1>ABOUT!</h1>
               </div>
       </div>
