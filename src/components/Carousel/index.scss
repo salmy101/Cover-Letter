@@ -31,3 +31,35 @@
   padding: 0 20px 0 20px;
   white-space: normal;
 }
+
+.carousel-buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-arrow{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.indicator-buttons{
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+.indicator > button{
+  margin: 5px;
+  background: non;
+}
+
+.indicator-symbol{
+ color: black;
+
+}
+.indicator-symbol-active{
+  color: white;
+ 
+ }

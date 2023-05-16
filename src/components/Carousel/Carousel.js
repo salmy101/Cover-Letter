@@ -19,6 +19,13 @@ function Carousel() {
     // { description: "Lorem ipsum dolor sit amet. Ut quam amet id eveniet tempora qu", image: image, link: url }
   ];
 
+  const updateIndex = () => {
+    if(newIndex < 0){
+      newIndex = 0;
+    }else if (newIndex >= projects.length) {
+      newIndex = projects.length - 1
+    }
+  }
   return (
     <>
       <div className="carousel">
