@@ -12,8 +12,8 @@ function Hero() {
         <div className="text-zone">
           <h1>Hello!</h1>
           <br></br>
-          <p>Welcome to my cover letter for COMPANY. IN this cover letter I hope that you can get an
-            understanding of who i am, my experiences, and why id love to work with you. If ive peaked your interetd plz continue
+          <p> You may be wondering what exactly this webpage is, so let me welcome you to my cover letter made specifically for your company, COMPANY NAME. IN this webpage cover letter I hope that you can get an
+            understanding of who i am, my experiences, and why id love to work with you. If ive peaked your interetd in anyways, please continue
           </p>
           <button>
           <Link to="/#about" smooth style={{ textDecoration: "none", color: "black" }}>

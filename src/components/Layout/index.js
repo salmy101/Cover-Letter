@@ -17,8 +17,8 @@ function Layout() {
       <div className="page"> 
       <Hero />
       <About />
-      {/* <Projects />
-      <Company /> */}
+       <Projects />
+      { /* <Company /> */}
       {/* <Outlet /> */}
 
       </div>
