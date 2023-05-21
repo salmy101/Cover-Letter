@@ -26,6 +26,12 @@ function Carousel() {
         "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
         image: image,
       },
+      {
+        title: "Weights",
+        description:
+          "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
+          image: image,
+        }
   ];
 
   const updateIndex = (newIndex) => {
