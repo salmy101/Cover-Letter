@@ -1,6 +1,7 @@
 import React from "react";
 import Turkey from "../../assests/about.JPG"
 import './index.scss'
+import Loader from 'react-loaders'
 import { HashLink as Link } from "react-router-hash-link";
 
 
@@ -27,6 +28,9 @@ function Hero() {
             </div>
 
       </div>
+      {/* <Loader type="ball-scale-ripple-multiple" />  */}
+      {/* <Loader type="pacman" /> */}
+
     </>
   );
 }

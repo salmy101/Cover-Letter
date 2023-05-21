@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import Loader from 'react-loaders'
+
 
 //pages
 import About from "./components/About";
@@ -8,6 +10,7 @@ import Projects from "./components/Projects";
 import Company from "./components/Company";
 
 function App() {
+
   return (
 
     <>
@@ -18,6 +21,7 @@ function App() {
           <Route path="/company" element={<Company />} />
         </Route>
       </Routes>
+
     </>
   );
 }
