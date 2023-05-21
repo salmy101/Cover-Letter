@@ -1,4 +1,4 @@
-.carousel{
+.carousel {
   overflow: hidden;
   width: 700px;
   display: flex;
@@ -6,60 +6,67 @@
   justify-content: center;
 }
 
-.inner{
+.inner {
   white-space: nowrap;
-  transition: transform 0.3sec;
-  box-shadow:  0 5px 15px rbga(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-.carousel-item{
-  display: flex;
-  flex-direction: column;
+.carousel-item {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 490px;
   background-color: #fff;
 }
-.carousel-image{
-  width: 350px;
-  padding: 0 20px 0 20px;
-}
 
-.carousel-description{
+.carousel-item-text {
   font-size: 1.15rem;
   margin: 40px 0 40px 0;
   padding: 0 20px 0 20px;
   white-space: normal;
+  color: #617d98;
+}
+.carousel-img {
+  width: 250px;
+  padding: 0 20px 0 20px;
 }
 
-.carousel-buttons{
+/* final stage */
+
+.carousel-buttons {
   display: flex;
   justify-content: space-evenly;
 }
 
-.button-arrow{
+.button-arrow {
   background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.indicator-buttons {
   border: none;
   cursor: pointer;
 }
 
-.indicator-buttons{
-  background: none;
-  border: none;
-  cursor: pointer;
-
-}
-
-.indicator > button{
+.indicators > button {
   margin: 5px;
-  background: non;
+  background: none;
 }
 
-.indicator-symbol{
- color: black;
-
+.indicator-symbol {
+  color: #26343f;
 }
-.indicator-symbol-active{
-  color: white;
- 
- }
+
+.indicator-symbol-active {
+  color: #4774ae;
+}

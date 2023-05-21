@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function CarouselItem({project}) {
+function CarouselItem({ item, width }) {
   return (
-    <div className='carousel-item'>
+    <div className="carousel-item" style={{ width: width }}>
       <div></div>
-      <img className='carousel-image' src={project.image}></img>
-      <div className='carousle-description'>{project.description}</div>
+      {/* <img className="carousel-img" src={item.icon.default} /> */}
+      <div className="carousel-item-text">{item.description}</div>
     </div>
-  )
-}
+  );
+};
 
-export default CarouselItem
+export default CarouselItem;
